@@ -178,4 +178,23 @@ footer p {
   font-size: 80%;
   color: white; }
 
+/* ---------- Media Queries ---------- */
+@media screen and (max-width: 480px) {
+  #banner, #date, #banner3, aside {
+    display: none !important; }
+
+  section {
+    width: 100%;
+    justify-content: center; }
+    section #news {
+      justify-content: center; }
+
+  .blogs1 {
+    width: 45% !important;
+    font-size: 70%; }
+
+  .hidden {
+    display: block !important;
+    width: 45%; } }
+
 /*# sourceMappingURL=style.css.map */
