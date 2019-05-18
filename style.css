@@ -87,10 +87,17 @@ footer {
     letter-spacing: 1px; }
 
 /* ---------- Main ---------- */
+main #date {
+  margin: 15px 0 0 0;
+  text-align: right;
+  width: 100%;
+  font-size: 80%;
+  font-style: italic; }
 main h1 {
   width: 100%;
   padding: 0 10px;
   background-color: #DEDEDE;
+  font-size: 120%;
   color: #4B4B4B; }
 main section {
   display: flex;
