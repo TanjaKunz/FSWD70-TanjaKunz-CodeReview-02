@@ -30,6 +30,14 @@ nav {
   width: 100%;
   height: 40px; }
 
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto; }
+
 /* ------- Header ------- */
 #header {
   display: flex;
@@ -67,5 +75,46 @@ nav {
   #nav a:hover {
     font-weight: bold;
     letter-spacing: 1px; }
+
+/* ---------- Main ---------- */
+main h1 {
+  width: 100%;
+  background-color: #DEDEDE;
+  color: #4B4B4B; }
+main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto; }
+  main section #news {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    height: auto; }
+    main section #news .blogs1 {
+      width: 30%;
+      background-color: #000000; }
+    main section #news img {
+      max-width: 100%; }
+  main section h1 {
+    margin: 15px 0; }
+  main section p {
+    margin: 0;
+    padding: 0 5px;
+    color: white; }
+  main section aside {
+    height: 100%; }
+    main section aside img {
+      display: block;
+      height: 100%;
+      width: auto; }
+main #banner3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto; }
 
 /*# sourceMappingURL=style.css.map */
