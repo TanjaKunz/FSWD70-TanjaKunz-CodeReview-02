@@ -36,7 +36,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  height: auto;
+  height: 100%;
   margin: 0 auto; }
 
 footer {
@@ -87,71 +87,35 @@ footer {
     letter-spacing: 1px; }
 
 /* ---------- Main ---------- */
-main #date {
-  margin: 15px 0 0 0;
-  text-align: right;
-  width: 100%;
-  font-size: 80%;
-  font-style: italic; }
 main h1 {
   width: 100%;
   padding: 0 10px;
   background-color: #DEDEDE;
   font-size: 120%;
   color: #4B4B4B; }
-main section {
+main #newsWrap {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: auto; }
-  main section .news {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 85%;
-    height: auto; }
-    main section .news .blogs1 {
-      width: 30%;
-      background-color: #000000; }
-    main section .news .blogs2 {
-      width: 48%;
-      height: auto;
-      background-color: #000000; }
-    main section .news img {
-      max-width: 100%; }
-    main section .news img:hover {
-      transform: scale(1.02, 1.02);
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px; }
-  main section h1 {
-    margin: 15px 0; }
-  main section hr {
-    width: 100%;
-    border: 0;
-    background-color: white; }
-  main section p {
-    margin: 0;
-    padding: 0 5px;
-    color: white; }
-  main section p:hover {
-    font-weight: bold;
-    letter-spacing: 1px; }
-  main section aside {
-    height: auto; }
-    main section aside img {
-      display: block;
-      height: 100%;
-      width: auto; }
-main .hidden {
-  display: none; }
-main #banner3 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 20px auto; }
+  width: 100%; }
+main #news {
+  display: flex; }
+main .blogs1, main .blogs2 {
+  background-color: #000000;
+  color: white;
+  margin: 20px 0; }
+main img {
+  max-width: 100%; }
+main img:hover {
+  transform: scale(1.02, 1.02);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+main a p {
+  margin: 0;
+  padding: 0 5px;
+  color: white; }
+main a p:hover {
+  font-weight: bold;
+  letter-spacing: 1px; }
 
 /* ---------- Footer ---------- */
 footer ul {
@@ -171,7 +135,7 @@ footer a:hover {
   letter-spacing: 1px; }
 footer #logoFoot {
   display: flex;
-  justify-content: flex-end; }
+  margin-right: 20px; }
 footer p {
   margin: 10px 0;
   text-align: center;
@@ -179,22 +143,106 @@ footer p {
   color: white; }
 
 /* ---------- Media Queries ---------- */
-@media screen and (max-width: 480px) {
-  #banner, #date, #banner3, aside {
-    display: none !important; }
-
-  section {
+@media screen and (min-width: 801px) {
+  main #date {
+    margin: 15px 0 0 0;
+    text-align: right;
     width: 100%;
+    font-size: 80%;
+    font-style: italic;
+    color: #4B4B4B; }
+  main #newsWrap {
+    display-direction: row;
+    justify-content: space-between; }
+  main #news {
+    display-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%; }
+  main .blogs1 {
+    width: 30%; }
+  main .hidden {
+    display: none; }
+  main #banner3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto; }
+  main .blogs2 {
+    width: 45%; }
+  main aside {
+    display-direction: column;
+    margin-top: 20px; }
+    main aside div {
+      height: 50%; }
+
+  #logoFoot {
+    justify-content: flex-end;
+    margin-right: 20px; } }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  main #date {
+    margin: 15px 0 0 0;
+    text-align: right;
+    width: 100%;
+    font-size: 80%;
+    font-style: italic;
+    color: #4B4B4B; }
+  main #newsWrap {
+    display-direction: row;
+    justify-content: space-between; }
+  main #news {
+    display-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; }
+  main .blogs1 {
+    width: 45%; }
+  main .hidden {
+    width: 45%;
+    margin: 20px 0; }
+  main #banner3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto; }
+  main .blogs2 {
+    width: 45%; }
+  main aside {
+    display: none; }
+
+  #logoFoot {
+    justify-content: flex-end;
+    margin-right: 20px; } }
+@media screen and (max-width: 480px) {
+  #banner {
+    display: none; }
+
+  #nav, #navFoot {
     justify-content: center; }
-    section #news {
-      justify-content: center; }
 
-  .blogs1 {
-    width: 45% !important;
-    font-size: 70%; }
+  main #date {
+    display: none; }
+  main #topNews {
+    margin-top: 20px;
+    margin-bottom: 0; }
+  main #news {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+  main .blogs1, main .blogs2 {
+    width: 45%; }
+  main .hidden {
+    width: 45%;
+    margin: 20px 0; }
+  main #banner3, main aside {
+    display: none; }
 
-  .hidden {
-    display: block !important;
-    width: 45%; } }
+  footer ul {
+    justify-content: center; }
+  footer #logoFoot {
+    justify-content: center;
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
