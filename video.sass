@@ -1,0 +1,29 @@
+#videos
+	display: flex
+	display-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+
+	.vid
+		margin: 15px 0
+
+	
+	iframe
+		max-width: 100%
+		height: auto
+	
+
+@media screen and (min-width: 1025px)
+	.vid
+		width: 20%
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px)
+	.vid
+		width: 45%
+
+
+@media screen and (max-width: 480px)
+	.vid
+		width: 90%
